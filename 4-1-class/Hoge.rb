@@ -1,5 +1,8 @@
-p 1
 class Hoge
-    p 2
+  def huga1; end
+  def huga2; end
+  alias :huga3 :huga1
+  undef :huga2
 end
-p 3
+
+p Hoge.instance_methods(false)

@@ -19,6 +19,7 @@ class FooExt < Foo
     end
 end
 
-fooExt = FooExt.new(3, 4)
-p fooExt.method1
-p fooExt.method2(5)
+foo1 = Foo.new(1)
+fooExt = FooExt.new(2, 3)
+p foo1.instance_variables
+p fooExt.instance_variables
